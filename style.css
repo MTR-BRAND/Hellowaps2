@@ -1,0 +1,4783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+    /* overflow-x: hidden; */
+    
+}
+
+/* !common css */
+.conte{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+/* !common css */
+
+
+
+/* Header Section ON */
+
+li , a , button{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 45px;
+}
+
+.nav_link li{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav_link li a{
+    padding-left: 21px;
+    color: #000000;
+}
+
+.btnBox1{
+   display: flex;
+   gap: 15px;
+}
+
+.Logo{
+    cursor: pointer;
+}
+
+.frame{
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.button{
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+.btn1{
+    border-radius: 25px;
+    border: none;
+    color: #000000;
+}
+
+.btn2{
+    border-radius: 25px;
+    border: none;
+    color: #FFFF;
+    background-color: #000000;
+}
+
+/* Header Section OFF */
+
+/* Banner Section ON */
+.Banner{
+    background: url(images/Rectangle\ 1.png);
+    width: 100%;
+    height: 760px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    position: relative;
+}
+
+.offerBox{
+    position: absolute;
+    width: 1160px;
+    height: 344px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin: auto;
+    background-color: #FFFF;
+    
+    & h2{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-top:50px;
+    }
+}
+
+.findBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 108px;
+    gap: 28px;
+    margin-top: 55px;
+
+    .select{
+       width: 222px;
+       height: 50px;
+       padding-left: 15px;
+       border-radius: 10px;
+       border: none;
+       outline: none;
+       background-color: #ECECEC;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       cursor: pointer; 
+
+       & h3{
+         font-size: 22px;
+         font-weight: 500;
+       }
+    }
+}
+
+
+
+.butBox2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 9.5%;
+
+    .btn3{
+        width: 702px;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+    }
+
+    .btn4{
+        width: 222px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        background-color: #00EBC7;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.Zappr_link{
+    position: absolute;
+    top: 631px;
+    left: 45%;
+    border-radius: 30px;
+    border: 1.5px solid #FFFF;
+     padding: 11px 28px;
+
+    & a{
+       text-decoration: underline;
+       color: #FFFF;
+       font-weight: 22px;
+       font-weight: 500;
+    }
+}
+
+
+/* Banner Section OFF */
+
+
+/* Buy&Sell Section ON */
+.Buy_Sell{
+    width: 100%;
+    height: 370px;
+    background-color: #FDE24F;
+    text-align: center;
+
+    & h2{
+        font-size: 34px;
+        font-weight: 400;
+        padding-top: 80px;
+        & span{
+            font-style: italic;
+        }
+        
+    }
+}
+
+.coin{
+    margin-top: 55px;
+
+    & img{
+        width: 75%;
+        height: 75%;
+    }
+}
+/* Buy&Sell Section OFF */
+
+
+/* Features Section ON */
+
+.Features{
+    width: 100%;
+    height: 700px;
+    color: #000000;
+    position: relative;
+    border-bottom: 1.5px solid #000000;
+    border-top: 1.5px solid #000000;
+
+    & h2{
+        margin-top: 70px;
+        margin-left: 80px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+}
+
+.FeaturesBox{
+    width: 1500px;
+    height: 280px;
+    display: flex;
+    margin: 130px auto;
+    justify-content: space-around;
+    gap: 50px;
+
+    & div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        & img{
+            margin-bottom: 15px;
+        }
+
+        & h3{
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        & p{
+            margin-bottom: 45px;
+            font-size: 20px;
+            line-height: 24.2px;
+            padding: 0px 0px;
+            color: #535353;
+        }
+
+        & a{
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: underline;
+            color: #000000;
+
+            & span{
+                font-style: italic;
+            }
+        }
+    }
+
+    .line{
+        width: 350px;
+        height: 2px;
+        background-color: #000000;
+        display: inline-block;
+        position: relative;
+        top: 40%;
+    }
+}
+
+
+.featuresbtn{
+    position: absolute;
+    left: 44%;
+    bottom: 45px;
+    border: 1.5px solid #000000;
+    border-radius: 30px;
+    padding: 11px 28px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    & a{
+        font-size: 22px;
+        font-weight: 500;
+        color: #000000;
+    }
+}
+
+/* Features Section ON */
+.payment{
+    width: 100%;
+    height: 700px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1.5px solid #000000;
+}
+
+.Buy{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    & h2{
+        margin-bottom: 28px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+}
+
+.paymentBox{
+    width: 626px;
+    height: 100px;
+    background-color: #FFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+
+    & img{
+        padding-left: 15px;
+    }
+
+    & h4{
+        padding-right: 50px;
+    }
+}
+
+.Sell{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    & h2{
+        margin-bottom: 28px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+}
+
+.line2{
+    width: 1.5px;
+    height: 700px;
+    background-color: #000000;
+}
+
+.viewbtn{
+    width: 237px;
+    /* height: 49px; */
+    padding: 11px 25px;
+    background: #000000;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+
+/* Payment Section OFF */
+
+
+/* sign_up Section ON */
+
+.sign_up{
+    width: 100%;
+    height: 600px;
+    background-color: #CFBAFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+   h1{
+    font-size: 75px;
+    font-weight: 500;
+} 
+
+button{
+    position: absolute;
+    bottom: 50px;
+    padding: 15px 45px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+}
+/* sign_up Section OFF */
+
+/* Footer Section ON*/
+.Footer{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+
+    & img{
+        width: 137.51px;
+        height: 36.39px;
+        margin-top: 85px;
+        margin-left: 100px;
+
+    }
+}
+
+.Fbox{
+    color: #FFFF;
+    margin-top: 85px;
+    margin-left: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & h2{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    & a{
+        color: #FFFF;
+        font-size: 20px;
+        transition: 0.3s ease-in;
+    }
+
+    & a:hover{
+        color: #CFBAFF;
+    }
+
+}
+
+.aboutBox{
+    width: 984px;
+    height: 312px;
+    display: flex;
+    margin-right: 670px;
+}
+/* Footer Section OFF*/
+
+/* copyright Section ON */
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFF;
+    border-top: 1.5px solid #fff;
+
+    & p{
+        padding: 35px 3%;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15.73px;
+    }
+}
+/* copyright Section OFF */
+
+
+/*responsive ON */
+
+@media (max-width: 1536px) {
+
+    .Zappr_link{
+        left: 45%;
+    }
+
+
+    .featuresbtn{
+        position: absolute;
+        left: 43%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 55px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 20px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 252px;
+    }
+
+}
+/* ////////////////////////////////////// */
+
+@media (max-width: 1280px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 45px;
+    }
+    
+    .nav_link li{
+        display: inline-block;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+    
+    .offerBox{
+        width: 80%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .butBox2{
+        gap: 22px;
+        margin-left: 10.5%;
+    
+        .btn3{
+            width: 602px;
+            height: 50px;
+        }
+    
+        .btn4{
+            width: 195px;
+            height: 50px;
+            margin-right: 4%;
+
+        }
+    }
+
+    .Zappr_link{
+        left: 43%;
+    }
+
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 130px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 40%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 626px;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 50px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 400px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 60px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    } 
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 55px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 20px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 252px;
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 30%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+/* ////////////////////////////////////////// */
+@media (max-width: 1024px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 45px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+    
+   .offerBox{
+        width : 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .butBox2{
+        gap: 25px;
+        margin-left: 11.5%;
+    
+        .btn3{
+            width: 526px;
+            height: 50px;
+        }
+    
+        .btn4{
+            width: 170px;
+            height: 50px;
+            margin-right: 11%;
+
+        }
+    }
+
+    .Zappr_link{
+        left: 42%;
+    }
+
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 130px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 40%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 626px;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 50px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 400px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 40px;
+        font-weight: 500;
+    } 
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 55px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 25%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+    }
+
+}
+
+/* //////////////////////////////// */
+@media (max-width: 860px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 45px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+    
+    .offerBox{
+        width: 80%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 30px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 65px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 22px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 20px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 4.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 4%;
+
+        }
+    }
+
+    .Zappr_link{
+        left: 40%;
+    }
+
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 130px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 35%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 626px;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 50px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 400px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 40px;
+        font-weight: 500;
+    } 
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 55px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+    }
+
+}
+
+/* //////////////////////////////////////// */
+@media (max-width: 768px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 45px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+    
+    .offerBox{
+        width: 80%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 30px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 65px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 22px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 20px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 4.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 4%;
+
+        }
+    }
+
+    .Zappr_link{
+        left: 40%;
+    }
+
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 130px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 35%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 626px;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 50px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 400px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 40px;
+        font-weight: 500;
+    } 
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 55px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 30%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* ///////////////////////////////// */
+@media (max-width: 640px) { 
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 30px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 19px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 4.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 4%;
+
+        }
+    }
+
+    .Zappr_link{
+        left: 35%;
+    }
+
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 32%;
+        bottom: 80px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 500px;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 21px;
+            padding-left: 3%;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 400px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 33px;
+        font-weight: 500;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 85px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        margin-top: 85px;
+        margin-left: 14%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+    }
+
+}
+
+/* /////////////////////////////////////// */
+@media (max-width: 575px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 25px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 15px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 25px;
+         height:25px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 12px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 15px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 15px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 17px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2%;
+            font-size: 17px;
+            font-weight: 600;
+
+
+        }
+    }
+
+    .Zappr_link{
+        left: 30%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 350px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 30px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 27%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 18px;
+            padding-left: 3%;
+            font-size: 15px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 300px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 25px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 145px;
+        margin-left: -45%;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 54%;
+    }
+
+}
+
+/* //////////////////////////// */
+@media (max-width: 560px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 25px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 15px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 25px;
+         height:25px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 12px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 15px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 15px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 17px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2%;
+            font-size: 17px;
+            font-weight: 600;
+
+
+        }
+    }
+
+    .Zappr_link{
+        left: 30%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 350px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 30px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 27%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 18px;
+            padding-left: 3%;
+            font-size: 15px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 300px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 25px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 145px;
+        margin-left: -45%;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 54%;
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 25%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+/* //////////////////////////////////// */
+@media (max-width: 450px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 25px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 8px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 25px;
+         height:25px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 12px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 13px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 13px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 16px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 17px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 16px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 702px;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2%;
+            font-size: 17px;
+            font-weight: 600;
+
+
+        }
+    }
+
+    .Zappr_link{
+        left: 30%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 350px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1550px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 15px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 90px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 20%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 18px;
+            padding-left: 3%;
+            font-size: 15px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 300px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 20px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 145px;
+        margin-left: -45%;
+    
+        & h2{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 16px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 54%;
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 12%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+/* ////////////////////////////////////// */
+@media (max-width: 430px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 12px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 8px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 20px;
+         height:20px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 10px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 10px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 6px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 15px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 6px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 77%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2.5%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .Zappr_link{
+        left: 25%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 300px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 20px;
+            font-size: 23px;
+            font-weight: 600;
+
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 0px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 19%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 9px;
+            padding-left: 0%;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 290px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 20px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 145px;
+        margin-left: -75%;
+    
+        & h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 12px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 86%;
+    }
+
+    .copyright{
+    
+        & p{
+            font-size: 8.5px;
+        }
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 12%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* //////////////////////////// */
+@media (max-width: 375px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 12px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 8px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 20px;
+         height:20px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 10px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 10px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 6px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 15px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 6px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 77%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2.5%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .Zappr_link{
+        left: 25%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 300px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 20px;
+            font-size: 23px;
+            font-weight: 600;
+
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 0px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 19%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 9px;
+            padding-left: 0%;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 290px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 20px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 145px;
+        margin-left: -75%;
+    
+        & h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 12px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 86%;
+    }
+
+    .copyright{
+    
+        & p{
+            font-size: 8.5px;
+        }
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 12%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+/* //////////////////// */
+@media (max-width: 350px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 12px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 8px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 20px;
+         height:20px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 10px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 10px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 6px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 15px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 6px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 77%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2.5%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .Zappr_link{
+        left: 25%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 300px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 20px;
+            font-size: 23px;
+            font-weight: 600;
+
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 0px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 19%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 9px;
+            padding-left: 0%;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 290px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 20px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 145px;
+        margin-left: -75%;
+    
+        & h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 12px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 86%;
+    }
+
+    .copyright{
+    
+        & p{
+            font-size: 8.5px;
+        }
+    }
+
+    .viewbtn{
+        width: 237px;
+        /* height: 49px; */
+        padding: 11px 25px;
+        background: #000000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+}
+
+/* ////////////////////////////////////// */
+@media (max-width: 260px) {
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 12px;
+    }
+    
+    .nav_link li{
+        display: none;
+    }
+
+
+    .Banner{
+        background: url(images/Rectangle\ 1.png);
+        width: 100%;
+        height: 760px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #000000;
+        position: relative;
+    }
+
+    .btnBox1{
+        display: flex;
+        gap: 8px;
+     }
+     
+     .Logo{
+         cursor: pointer;
+         width: 150px;
+     }
+     
+     .frame{
+         width: 20px;
+         height:20px;
+         cursor: pointer;
+     }
+     
+     .button{
+         padding: 6px 10px;
+         cursor: pointer;
+     }
+
+     .btn1{
+        border-radius: 25px;
+        border: none;
+        color: #000000;
+        font-size: 10px;
+    }
+    
+    .btn2{
+        border-radius: 25px;
+        border: none;
+        color: #FFFF;
+        background-color: #000000;
+        font-size: 10px;
+    }
+    
+    .offerBox{
+        width: 90%;
+        height: 344px;
+        
+        & h2{
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top:50px;
+        }
+    }
+
+    .findBox{
+        padding: 0px 12px;
+        gap: 6px;
+        margin-top: 55px;
+    
+        .select{
+           width: 222px;
+           height: 50px;
+           padding-left: 0px;
+           position: relative;
+    
+           & h3{
+             font-size: 15px;
+             font-weight: 500;
+             margin-bottom: 8%;
+             }
+
+           }
+
+           .fa-solid {
+            position: absolute;
+            left: 40%;
+            bottom: 8%;
+            font-size: 16px;
+
+           }
+        }
+    
+
+
+    .butBox2{
+        gap: 6px;
+        margin-left: 3.5%;
+    
+        .btn3{
+            width: 77%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .btn4{
+            width: 222px;
+            height: 50px;
+            margin-right: 2.5%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .Zappr_link{
+        left: 25%;
+    }
+
+    .Buy_Sell{
+        width: 100%;
+        height: 300px;
+        background-color: #FDE24F;
+        text-align: center;
+    
+        & h2{
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 80px;
+            & span{
+                font-style: italic;
+            }
+            
+        }
+    }
+
+    .coin{
+        margin-top: 55px;
+    
+        & img{
+            width: 95%;
+            height: 85%;
+        }
+    }
+
+    .Features{
+        width: 100%;
+        height: 1350px;
+        color: #000000;
+        position: relative;
+        border-bottom: 1.5px solid #000000;
+        border-top: 1.5px solid #000000;
+    
+        & h2{
+            margin-top: 70px;
+            margin-left: 20px;
+            font-size: 23px;
+            font-weight: 600;
+
+        }
+    }
+
+    .FeaturesBox{
+        width: 80%;
+        height: 280px;
+        display: flex;
+        margin: 100px auto;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 50px;
+    
+        & div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            & img{
+                margin-bottom: 15px;
+            }
+    
+            & h3{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+    
+            & p{
+                line-height: 24.2px;
+                padding: 0px 0px;
+            }
+        }
+    
+        .line{
+            position: relative;
+            display: none;
+        }
+    }
+
+    .featuresbtn{
+        position: absolute;
+        left: 19%;
+        bottom: 40px;
+        border: 1.5px solid #000000;
+        border-radius: 30px;
+        padding: 11px 28px;
+    
+        & a{
+            font-size: 22px;
+            font-weight: 500;
+            color: #000000;
+        }
+    }
+
+    .payment{
+        width: 100%;
+        height: 1%;
+        padding: 70px 40px;
+        background-color: #F8F8F8;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        border-bottom: 1.5px solid #000000;
+    }
+    
+    .Buy{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    
+    .paymentBox{
+        width: 100%;
+        height: 100px;
+        background-color: #FFFF;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 15px;
+    
+    
+        & img{
+            padding-left: 15px;
+        }
+    
+        & h4{
+            padding-right: 9px;
+            padding-left: 0%;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    }
+    
+    .Sell{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    
+        & h2{
+            margin-bottom: 28px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+
+
+    
+    .line2{
+        width: 1.5px;
+        height: 700px;
+        background-color: #000000;
+        display: none;
+    }
+    
+
+    .sign_up{
+        width: 100%;
+        height: 290px;
+        background-color: #CFBAFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+       h1{
+        font-size: 20px;
+        font-weight: 600;
+    } 
+
+    
+    button{
+        position: absolute;
+        bottom: 50px;
+        padding: 15px 45px;
+        gap: 4px;
+        border-radius: 30px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    }
+
+    .Footer{
+        width: 100%;
+        height: 510px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #000000;
+    
+        & img{
+            width: 137.51px;
+            height: 36.39px;
+            margin-top: 75px;
+            margin-left: 35px;
+    
+        }
+    }
+    
+    .Fbox{
+        color: #FFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 145px;
+        margin-left: -75%;
+    
+        & h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        & a{
+            color: #FFFF;
+            font-size: 12px;
+            transition: 0.3s ease-in;
+        }
+    
+        & a:hover{
+            color: #CFBAFF;
+        }
+    
+    }
+    
+    .aboutBox{
+        width: 984px;
+        height: 312px;
+        display: flex;
+        margin-right: 670px;
+        gap: 86%;
+    }
+
+    .copyright{
+    
+        & p{
+            font-size: 8.5px;
+        }
+    }
+
+}
+/*responsive OFF */
